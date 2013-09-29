@@ -1,7 +1,5 @@
 // variables definition
 $primaryColor = #811d1d;
-// importations
-@import url(http://fonts.googleapis.com/css?family=Bubbler+One);
 
 html, body {
     position: absolute;
@@ -57,34 +55,20 @@ html, body {
             background: #222;
             margin: 0 0 3px;
             list-style: none;
+            overflow: hidden;
 
             a {
                 padding: 20px 0;
                 margin: 0;
                 padding-left: 10px;
-                border: 1px solid #1d1d1d;
                 color: #fff;
                 display: block;
                 font-size: 16px;
-            }
-
-            a:hover {
-                animation: move 300ms ease-in-out;
             }
         }
 
         li:hover { 
             border-color: $primaryColor; 
         }
-    }
-}
-
-@keyframes move {
-    from {
-        opacity: 0;
-        transform: translateY(200%);
-    } to {
-        opacity: 1,
-        transform: translateY(0%);
     }
 }
