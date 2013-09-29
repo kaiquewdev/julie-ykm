@@ -1,0 +1,11 @@
+{
+  "name": "fth-ship",
+  "version": "0.0.1",
+  "description": "Home of Feel The Hacking Organization",
+  "dependencies": {
+    "grunt-contrib-cssmin": "~0.6.2",
+    "grunt": "~0.4.1",
+    "grunt-shell": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
