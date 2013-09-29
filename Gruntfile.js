@@ -1,6 +1,12 @@
 module.exports = exports = function ( grunt ) {
     grunt.initConfig({
         shell: {
+            server: {
+                options: {
+                    stdout: true  
+                },
+                command: 'python -m SimpleHTTPServer'
+            },
             compileRoo: {
                 options: {
                     stdout: true,    
@@ -23,7 +29,7 @@ module.exports = exports = function ( grunt ) {
         watch: {
             css: {
                 files: 'css/*.roo',    
-                tasks: ['default'],
+                tasks: ['shell:compileRoo', 'cssmin'],
                 options: {
                     livereload: true    
                 }
