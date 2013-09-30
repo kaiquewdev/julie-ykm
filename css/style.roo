@@ -45,7 +45,7 @@ html, body {
 }
 
 .menu {
-    margin: 50px 100px 0;
+    margin: 50px 100px 25px;
     opacity: .7;
 
     .list {
@@ -72,5 +72,18 @@ html, body {
         li:hover { 
             border-color: $primaryColor; 
         }
+    }
+}
+
+.newsletter {
+    border-top: 2px solid #ddd;
+    margin: 10px 100px;
+
+    .input-large {
+        border: none;    
+        padding: 7px 5px;
+        margin: 0;
+        width: 350px;
+        border-radius: 2px;
     }
 }
