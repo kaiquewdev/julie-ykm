@@ -26,12 +26,32 @@ module.exports = exports = function ( grunt ) {
             }
         },
 
+        uglify: {
+            production_package: {
+                files: {
+                    'js/main.min.js': [
+                        'js/user-voice.js',
+                    ]
+                }
+            }
+        },
+
         watch: {
             css: {
                 files: 'css/*.roo',    
                 tasks: ['shell:compileRoo', 'cssmin'],
                 options: {
                     livereload: true    
+                }
+            },
+
+            js: {
+                files: [
+                    'js/user-voice.js',
+                ],
+                tasks: ['uglify'],
+                options: {
+                    livereload: true
                 }
             }
         }
@@ -40,6 +60,7 @@ module.exports = exports = function ( grunt ) {
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', [ 'shell', 'cssmin' ]);
+    grunt.registerTask('default', [ 'shell', 'cssmin', 'uglify' ]);
 };
