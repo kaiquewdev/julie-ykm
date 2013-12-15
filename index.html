@@ -3,63 +3,77 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feel The Hacking</title>
+    <title>Julie Ykm</title>
     <link 
-          href='http://fonts.googleapis.com/css?family=Bubbler+One' 
-          rel='stylesheet' 
-          type='text/css'
-    />
+      href='http://fonts.googleapis.com/css?family=Bad+Script'
+      rel='stylesheet'
+      type='text/css'>
     <link href="css/main.min.css" rel="stylesheet" />
 </head>
 <body>
-    <a href="https://github.com/fth-ship/sea"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
     <div class="main content">
-        <section class="header">
-            <header class="holder">
-                <h1 class="brand">Feel The Hacking</h1>
-            </header>
-        </section>
-
-        <section class="core holder">
-            <div class="menu">
-                <ul class="list">
-                    <li>
-                        <a href="https://github.com/fth-ship" target="_blank">Projects</a>
-                    </li>
-                    <li>
-                        <a href="http://fthship.tumblr.com/" target="_blank">Blog</a>
-                    </li>
-                    <li>
-                        <a href="http://facebook.com/groups/fthship" target="_blank">Group</a>
-                    </li>
-                    <li>
-                        <a href="http://fth-ship.uservoice.com/" target="_blank">Ideas</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                 <form 
-                        action="https://tinyletter.com/kaiquewdev"
-                        method="post" 
-                        target="popupwindow" 
-                        onsubmit="window.open('https://tinyletter.com/kaiquewdev', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
-                        class="newsletter"
-                 >
-                    <fieldset>
-                        <h2>Hacking weekly</h2>
-                        <br />
-
-                        <input type="text" class="input input-large" name="email" id="tlemail" placeholder="Put your email here..." />
-
-                        <input type="hidden" value="1" name="embed"/>
-                        <input type="submit" value="Subscribe" class="btn btn-danger" />
-                    </fieldset>
-                </form>
-            </div>
         <section>
+          <div class="header">
+            <header class="holder">
+                <h1 class="brand">Julie Ykm</h1>
+            </header>
+          </div>
+        </section>
+        <section class="core holder">
+          <div class="widget widget-soundcloud">
+            <iframe 
+              class="iframe" 
+              width="100%" 
+              height="465" 
+              scrolling="no" 
+              frameborder="no" 
+              src="https://w.soundcloud.com/player/?url=/julie-ykm&amp;auto_play=true&amp;auto_advance=true&amp;buying=true&amp;liking=true&amp;download=true&amp;sharing=true&amp;show_artwork=true&amp;show_comments=true&amp;show_playcount=true&amp;show_user=true&amp;hide_related=false&amp;start_track=0&amp;callback=true"></iframe>
+            <br />
+
+            <div class="widget widget-mailchimp">
+              <!-- Begin MailChimp Signup Form -->
+              <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+              <style type="text/css">
+                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:400px;}
+              </style>
+              <div id="mc_embed_signup">
+              <form action="http://octi.us2.list-manage.com/subscribe/post?u=7733373f2ba4a413b7bf9fc10&amp;id=4fff22b5db" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate widget-mailchimp-holder" target="_blank" novalidate>
+                <label for="mce-EMAIL">Julie Ykm assinar novidades</label>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Seu email..." required>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;"><input type="text" name="b_7733373f2ba4a413b7bf9fc10_4fff22b5db" value=""></div>
+                <div class="clear"><input type="submit" value="Assinar" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </form>
+              </div>
+
+              <!--End mc_embed_signup-->
+            </div>
+          </div>
+
+          <div class="widget widget-twitter">
+            <a class="twitter-timeline" href="https://twitter.com/JulieYKM" data-widget-id="412055514927742977">Tweets by @JulieYKM</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </section>
     </div>
-    
-    <script type="text/javascript" src="js/main.min.js"></script>
+
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <script type="text/javascript">
+      (function(){
+        var widgetIframe = document.getElementById('sc-widget'),
+            widget       = SC.Widget(widgetIframe);
+
+        widget.bind(SC.Widget.Events.READY, function() {
+          // load new widget
+          widget.bind(SC.Widget.Events.FINISH, function() {
+            widget.load(newSoundUrl, {
+              show_artwork: false
+            });
+          });
+        });
+
+      }());
+    </script>
+    <script src="/js/main.min.js"></script>
 </body>
 </html>

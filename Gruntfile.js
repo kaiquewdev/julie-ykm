@@ -30,7 +30,8 @@ module.exports = exports = function ( grunt ) {
             production_package: {
                 files: {
                     'js/main.min.js': [
-                        'js/user-voice.js',
+                        'bower_components/jquery/jquery.js',
+                        'js/main.js',
                     ]
                 }
             }
@@ -47,7 +48,7 @@ module.exports = exports = function ( grunt ) {
 
             js: {
                 files: [
-                    'js/user-voice.js',
+                    'js/main.js',
                 ],
                 tasks: ['uglify'],
                 options: {
