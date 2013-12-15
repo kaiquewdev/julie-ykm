@@ -4,7 +4,7 @@
 
   function randomBackgroundHandler () {
     var $html = $('html');
-    var imgPath = './img/';
+    var imgPath = 'img/';
     var imgs = [
       'bg1.jpg', 
       'bg2.jpg', 
